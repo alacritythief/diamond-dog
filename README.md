@@ -5,6 +5,14 @@ Diamond Dog v1.0
 
 An Express.js & Node.js powered framework for apps and sites, similar to Site-Starter.
 
+What's Included:
+----------------
+
+* Express.js
+* Node.js
+* Jade Templating
+* Stylus CSS support (no need to run grunt!)
+
 Server Instructions:
 -------------------
 
