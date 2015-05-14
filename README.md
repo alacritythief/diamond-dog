@@ -9,7 +9,6 @@ What's Included:
 ----------------
 
 * Express.js
-* Node.js
 * Jade Templating
 * Stylus CSS support (no need to run grunt!)
 
