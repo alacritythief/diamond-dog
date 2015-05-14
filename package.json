@@ -1,0 +1,26 @@
+{
+  "name": "diamond-dog",
+  "version": "1.0.0",
+  "description": "An Express.js & Node.js powered framework for apps and sites, similar to Site-Starter",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alacritythief/CoastCast.git"
+  },
+  "keywords": [
+    "Diamond Dog",
+    "ExpressJS"
+  ],
+  "author": "Andy Wong",
+  "license": "PRIVATE",
+  "dependencies": {
+    "body-parser": "^1.12.4",
+    "express": "^4.12.3",
+    "jade": "^1.9.2",
+    "nib": "^1.1.0",
+    "stylus": "^0.51.1"
+  }
+}
