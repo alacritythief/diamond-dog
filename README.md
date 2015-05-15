@@ -25,8 +25,8 @@ Server Instructions:
 Need Database Support?
 ----------------------
 
-* Check this general [express.js guide](http://expressjs.com/guide/database-integration.html) on supporting various DBs such as Mongo, Postgres, and Redis.
-* If you need an ORM for SQL, try out [Sequelize](http://docs.sequelizejs.com/en/latest/) or [node-orm](https://github.com/dresende/node-orm2)
+* Check this [Express.js guide](http://expressjs.com/guide/database-integration.html) on supporting various DBs such as Mongo, Postgres, and Redis.
+* If you need an ORM for SQL, try out [Sequelize](http://docs.sequelizejs.com/en/latest/) or [node-orm](https://github.com/dresende/node-orm2).
 
 PING Testing:
 -------------
