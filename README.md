@@ -13,6 +13,7 @@ What's Included:
 * [Stylus CSS](https://learnboost.github.io/stylus/) support (no need to run grunt!)
 * [body-parser](https://github.com/expressjs/body-parser) for parsing POST requests
 * [cookie-parser](https://github.com/expressjs/cookie-parser) for retrieving and setting cookies
+* [csurf](https://github.com/expressjs/csurf) for CSRF protection
 
 Server Instructions:
 -------------------
