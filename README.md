@@ -8,9 +8,9 @@ An Express.js & Node.js powered framework for apps and sites, similar to Site-St
 What's Included:
 ----------------
 
-* Express.js
-* Jade Templating
-* Stylus CSS support (no need to run grunt!)
+* [Express.js](http://expressjs.com/)
+* [Jade templating](http://jade-lang.com/) (similar to HAML)
+* [Stylus CSS](https://learnboost.github.io/stylus/) support (no need to run grunt!)
 
 Server Instructions:
 -------------------
