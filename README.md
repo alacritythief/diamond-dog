@@ -15,7 +15,7 @@ What's Included:
 Server Instructions:
 -------------------
 
-* Make sure [Node.js](https://nodejs.org/) and NPM are installed
+* Make sure [Node.js](https://nodejs.org/) and NPM are installed with `brew install node`
 * Clone this repo and go into its folder
 * `npm install` will locally install all required Node modules
 * `node app.js` to run the server
