@@ -6,6 +6,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var cookieParser = require('cookie-parser');
+var csrf = require('csurf');
 var stylus = require('stylus');
 var nib = require('nib');
 
@@ -30,6 +31,10 @@ app.use(bodyParser.json());
 // Use cookie-parser for getting and setting cookies:
 app.use(cookieParser());
 
+// CSRF protection:
+var csrfProtection = csrf({ cookie: true })
+var parseForm = bodyParser.urlencoded({ extended: false })
+
 // TEMPLATE ENGINE - JADE
 app.set('views', './views');
 app.set('view engine', 'jade');
@@ -39,6 +44,24 @@ app.set('view engine', 'jade');
 app.get('/', function(req, res) {
   res.render('home', {
         message: "Diamond Dog is working!"
+    });
+});
+
+// Routes with CSRF protection
+
+app.get('/form', csrfProtection, function(req, res) {
+  res.render('form', {
+        csrfToken: req.csrfToken()
+    });
+});
+
+app.post('/form', parseForm, csrfProtection, function(req, res) {
+  var payload = req.body;
+
+  res.render('result', {
+      status: "POST SUCCESS",
+      name: payload.name,
+      saying: payload.saying
     });
 });
 

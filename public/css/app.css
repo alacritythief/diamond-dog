@@ -194,9 +194,19 @@ td,
 th {
   padding: 0;
 }
+.dogbox {
+  margin: 10px auto;
+  padding: 1em;
+  background-color: #ddd;
+  width: 400px;
+  height: 300px;
+}
+.dogbox input[type=text] {
+  width: 95%;
+}
 .doglogo {
   margin: 10px auto;
-  padding: 1em 0 2em;
+  padding: 1em 0 3em;
   background-color: #ddd;
   text-align: center;
   width: 400px;
