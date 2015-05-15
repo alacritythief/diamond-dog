@@ -11,6 +11,8 @@ What's Included:
 * [Express.js](http://expressjs.com/)
 * [Jade templating](http://jade-lang.com/) (similar to HAML)
 * [Stylus CSS](https://learnboost.github.io/stylus/) support (no need to run grunt!)
+* [body-parser](https://github.com/expressjs/body-parser) for parsing POST requests
+* [cookie-parser](https://github.com/expressjs/cookie-parser) for retrieving and setting cookies
 
 Server Instructions:
 -------------------

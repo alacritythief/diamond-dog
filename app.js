@@ -5,6 +5,7 @@
 // LIBRARIES
 var express = require('express');
 var bodyParser = require('body-parser');
+var cookieParser = require('cookie-parser');
 var stylus = require('stylus');
 var nib = require('nib');
 
@@ -25,6 +26,9 @@ app.use(express.static(__dirname + '/public'));
 // Use body-parser for parsing requests:
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+
+// Use cookie-parser for getting and setting cookies:
+app.use(cookieParser());
 
 // TEMPLATE ENGINE - JADE
 app.set('views', './views');
