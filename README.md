@@ -22,6 +22,12 @@ Server Instructions:
 * Go to [localhost:3000](http://localhost:3000/) in your browser
 * If you wish to auto-restart the server after every change to `app.js`, install Nodemon with `npm install -g nodemon`, and use `nodemon app.js`.
 
+Need Database Support?
+----------------------
+
+* Check this general [express.js guide](http://expressjs.com/guide/database-integration.html) on supporting various DBs such as Mongo, Postgres, and Redis.
+* If you need an ORM for SQL, try out [Sequelize](http://docs.sequelizejs.com/en/latest/) or [node-orm](https://github.com/dresende/node-orm2)
+
 PING Testing:
 -------------
 
