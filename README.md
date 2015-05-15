@@ -16,7 +16,7 @@ Server Instructions:
 -------------------
 
 * Make sure [Node.js](https://nodejs.org/) and NPM are installed with `brew install node`
-* Clone this repo and go into its folder
+* `git clone` this repo and go into its folder
 * `npm install` will locally install all required Node modules
 * `node app.js` to run the server
 * Go to [localhost:3000](http://localhost:3000/) in your browser
