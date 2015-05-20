@@ -3,7 +3,7 @@ Diamond Dog v1.0
 
 ![Diamond Dogs](/public/img/diamond_dogs.png)
 
-An Express.js & Node.js powered framework for apps and sites, similar to Site-Starter.
+An Express.js & Node.js powered starter kit for apps and sites, similar to Site-Starter.
 
 What's Included:
 ----------------
