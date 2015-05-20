@@ -3,7 +3,7 @@ Diamond Dog v1.0
 
 ![Diamond Dogs](/public/img/diamond_dogs.png)
 
-An Express.js & Node.js powered starter kit for apps and sites, similar to Site-Starter.
+An Express.js & Node.js powered starter kit for apps and sites.
 
 What's Included:
 ----------------
@@ -37,3 +37,9 @@ PING Testing:
 
 * Opening [localhost:3000/ping](http://localhost:3000/ping) makes sure the server is running and receiving GET requests.
 * Sending a POST request to [localhost:3000/ping](http://localhost:3000/ping) makes sure the server is receiving POST requests.
+
+Legal Stuff:
+------------
+
+* The Diamond Dogs logo is from Metal Gear Solid 5, property of Kojima Productions and Konami.
+* Please forgive me for the Bowie references.
