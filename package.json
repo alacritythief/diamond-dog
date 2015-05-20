@@ -1,7 +1,7 @@
 {
   "name": "diamond-dog",
   "version": "1.0.0",
-  "description": "An Express.js & Node.js powered framework for apps and sites, similar to Site-Starter",
+  "description": "An Express.js & Node.js powered framework for apps and sites.",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

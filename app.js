@@ -1,6 +1,5 @@
 // Diamond Dog v1.0 Server
-// An Express.js & Node.js powered framework for apps and sites,
-// similar to Site-Starter
+// An Express.js & Node.js powered starter kit for apps and sites.
 
 // LIBRARIES
 var express = require('express');
@@ -13,9 +12,12 @@ var nib = require('nib');
 // EXPRESS APP
 var app = express();
 
-// STYLUS MIDDLEWARE
+// TEMPLATE ENGINE - JADE
+app.set('views', './views');
+app.set('view engine', 'jade');
 
-function compileStylus(str, path) {
+// STYLUS MIDDLEWARE
+var compileStylus = function(str, path) {
   return stylus(str)
     .set('filename', path)
     .use(nib())
@@ -32,12 +34,7 @@ app.use(bodyParser.json());
 app.use(cookieParser());
 
 // CSRF protection:
-var csrfProtection = csrf({ cookie: true })
-var parseForm = bodyParser.urlencoded({ extended: false })
-
-// TEMPLATE ENGINE - JADE
-app.set('views', './views');
-app.set('view engine', 'jade');
+app.use(csrf({ cookie: true }));
 
 
 // ROUTES
@@ -47,15 +44,13 @@ app.get('/', function(req, res) {
     });
 });
 
-// Routes with CSRF protection
-
-app.get('/form', csrfProtection, function(req, res) {
+app.get('/form', function(req, res) {
   res.render('form', {
         csrfToken: req.csrfToken()
     });
 });
 
-app.post('/form', parseForm, csrfProtection, function(req, res) {
+app.post('/form', function(req, res) {
   var payload = req.body;
 
   res.render('result', {
