@@ -20,7 +20,7 @@ app.set('view engine', 'jade');
 var compileStylus = function(str, path) {
   return stylus(str)
     .set('filename', path)
-    .use(nib())
+    .use(nib());
 };
 
 app.use(stylus.middleware({src: __dirname + '/public', compile: compileStylus}));
